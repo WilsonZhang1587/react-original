@@ -19,7 +19,8 @@
     "build": "react-scripts build",
     "eject": "react-scripts eject",
     "test": "jest",
-    "server": "node ./json-server/server.js"
+    "server": "node ./json-server/server.js",
+    "checklint": "eslint ."
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -67,7 +68,7 @@
   },
   "husky": {
     "hooks": {
-      "pre-commit": "eslint src/**/*.js",
+      "pre-commit": "npm run checklint",
       "pre-push": "npm run test __tests__/unitTest"
     }
   }
