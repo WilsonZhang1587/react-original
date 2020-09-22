@@ -9,7 +9,8 @@
     "node-sass": "^4.14.1",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
-    "react-scripts": "3.4.3",
+    "react-redux": "^7.2.1",
+    "react-scripts": "3.4.0",
     "redux": "^4.0.5",
     "redux-devtools-extension": "^2.13.8",
     "redux-thunk": "^2.3.0"
@@ -20,7 +21,8 @@
     "eject": "react-scripts eject",
     "test": "jest",
     "server": "node ./json-server/server.js",
-    "checklint": "eslint ."
+    "checkEslint": "eslint **/*.{js,jsx}",
+    "checkStylelint": "stylelint src/**/*.scss"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -65,11 +67,5 @@
     "stylelint-config-standard": "^20.0.0",
     "stylelint-order": "^4.1.0",
     "stylelint-scss": "^3.18.0"
-  },
-  "husky": {
-    "hooks": {
-      "pre-commit": "npm run checklint",
-      "pre-push": "npm run test __tests__/unitTest"
-    }
   }
 }
