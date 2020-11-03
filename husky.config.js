@@ -6,6 +6,6 @@ module.exports = {
       'npm run checkEslint',
       'npm run checkStylelint'
     ]),
-    'pre-push': 'npm run test __tests__/unitTest'
+    'pre-push': 'npm run unitTest'
   }
 }
