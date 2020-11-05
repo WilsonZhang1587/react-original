@@ -22,8 +22,8 @@
     "server": "node ./json-server/server.js",
     "test": "jest",
     "unitTest": "jest __tests__/unitTest",
-    "checkEslint": "eslint .",
-    "checkStylelint": "stylelint ."
+    "checkEslint": "eslint **/*.{js,jsx}",
+    "checkStylelint": "stylelint **/*.{css,scss}"
   },
   "eslintConfig": {
     "extends": "react-app"
